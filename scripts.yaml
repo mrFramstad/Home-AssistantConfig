@@ -1,0 +1,8 @@
+garasje:
+    sequence:
+      # This is written using the Script Syntax
+      - service: garage_door.trigger_door
+        entity_id: garage_door.door
+      - service: notify.notify
+        data:
+          message: 'Garasjeporten er trigget!'
